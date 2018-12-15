@@ -1,0 +1,100 @@
+Name: Yingfeng Dai
+Login: cs11face
+Date: November 15, 2017
+File: README
+Sources of Help: https://cseweb.ucsd.edu/~ricko/CSE11/PA7.pdf
+                 Chapter 11 handout
+                 
+This file explains how these three programs work in detail with a high level 
+description and provides solutions for the short response questions.
+
+
+PrintDigits2English: This program takes numbers entered by the user and
+printing them out in English one digit at a time.
+You should enter "javac PrintDigits2English.java" in the command line to
+compile the program first.
+Then enter "java PrintDigits2English num1 [num2 ...]" (num1, num2, ... can
+be any valid integer and negative number accepted).
+If you enter "java PrintDigits2English", then prints out usage message.
+If you enter "java PrintDigits2English 5", then prints out "Five.".
+If you enter "java PrintDigits2English 12", then prints out "One Two.".
+If you enter "java PrintDigits2English 99999999999999999999999999999", 
+then prints out error message about invalid integer.
+If you enter "java PrintDigits2English 12cse11",
+then prints out error message about invalid integer.
+If you enter "java PrintDigits2English 350 787", 
+then prints out "Three Five Zero."
+                "Seven Eight Seven.".
+If you enter "java PrintDigits2English 999999999999999999999999 32xyz 87654 
+3454", 
+then prints out two error messages about invalid integer in two lines, and
+                "Eight Seven Six Five Four."
+                "Three Four Five Four.".
+If you enter "java PrintDigits2English 0000002340 -1005",
+then prints out "Two Three Four Zero."
+                "One Zero Zero Five.".
+
+
+Slots: This program simulates the classic slot machines seen in casinos.
+You should enter "javac -cp *:. Slots.java" in the command line first to
+compile the program.
+Then you should enter "java -cp *:. Slots [delay]" (delay is a number between
+10 and 2000, used as the time of spinning the slot machine one time, the bigger
+the number you enter, the slower the speed you get).
+If you enter "java -cp *:. Slots 123abc", then prints out error message about
+invalid delay and usage message.
+If you enter "java -cp *:. Slots arg1 arg2", then prints out error message 
+about invalid number of arguments and usage message.
+If you enter "java -cp *:. Slots 1", then prints out error message that
+delay must be in the range and usage message.
+If you enter "java -cp *:. Slots 1000000", then prints out error message that
+delay must be in the range and usage message.
+When program begin, on the popping window, there is a Title on the top, and two 
+labels "Wins" and "Losses" to accumulate the times you win and loss. There is 
+a button on the bottom named "Click to Spin!", namely just clicked it simply
+by pressing the left button of the mouse and release it within the button icon
+to start the game one time. There are three images on the center. After you
+click the button on the bottom of the popping up window, the 3 images will
+spin just like slot machines in casinos. After all the images finalized, if
+these three images are exactly same, then you win the game, the number after 
+the "Wins" label will increase by 1, and an image of win will show up on the 
+center of the popping up window. If these three images are not exactly same,
+then you lose the game, the number after the "Losses" label will increase 
+by 1. You can play as many times as you want.
+
+
+EC_Slots: Everything in this program is the same as Slots except that there
+are a bank amount text field and a choice box on the bottom of the popping up
+window. Firstly, you need to enter the amount of money you want to save into
+the bank account (after the label "Bank Amount") to play the slot machine, and 
+then you press [ENTER] in the keyboard to enable the spin button. And then you 
+can choose the number in the choice box on the right of the bottom to determine
+how many money you want to bet for playing the game one time. Every time you
+play the game, you need to pay the money you bet, and every time you win, you 
+can get 15 * the money you bet back. You can play as many times as you want
+only if you still have money. When you run out of your money, the "Go Home"
+will show in your bank amount text field, and then you cannot play the game
+anymore.
+
+
+Short Response:
+
+1. ":set shiftwidth=[Number]" (Number is number of spaces to indent, and
+without brackets)
+Press 'N', then press '>' 2 times. (N is number of lines you want to indent)
+
+Likewise, ":set shiftwidth=[Number]" (Number is number of spaces to indent, and
+without brackets)
+Press 'N', then press '<' 2 times. (N is number of lines you want to indent)
+
+2. Press '>', then press '%' to indent.
+   Press '<', then press '%' to de-indent.
+
+3. Make sure you are in the normal mode, and then press letter 'o'.
+
+4. You need to compile the program first.
+"java [Filename] > output" (without brackets, without ".java", if need class
+pass using "java -cp *:. [Filename]")
+
+5. Event handling works as a subroutine that deal with the event that triggered
+by the user in a running program.
