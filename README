@@ -1,10 +1,3 @@
-Name: Yingfeng Dai
-Login: cs11face
-Date: November 15, 2017
-File: README
-Sources of Help: https://cseweb.ucsd.edu/~ricko/CSE11/PA7.pdf
-                 Chapter 11 handout
-                 
 This file explains how these three programs work in detail with a high level 
 description and provides solutions for the short response questions.
 
@@ -75,26 +68,3 @@ can get 15 * the money you bet back. You can play as many times as you want
 only if you still have money. When you run out of your money, the "Go Home"
 will show in your bank amount text field, and then you cannot play the game
 anymore.
-
-
-Short Response:
-
-1. ":set shiftwidth=[Number]" (Number is number of spaces to indent, and
-without brackets)
-Press 'N', then press '>' 2 times. (N is number of lines you want to indent)
-
-Likewise, ":set shiftwidth=[Number]" (Number is number of spaces to indent, and
-without brackets)
-Press 'N', then press '<' 2 times. (N is number of lines you want to indent)
-
-2. Press '>', then press '%' to indent.
-   Press '<', then press '%' to de-indent.
-
-3. Make sure you are in the normal mode, and then press letter 'o'.
-
-4. You need to compile the program first.
-"java [Filename] > output" (without brackets, without ".java", if need class
-pass using "java -cp *:. [Filename]")
-
-5. Event handling works as a subroutine that deal with the event that triggered
-by the user in a running program.
